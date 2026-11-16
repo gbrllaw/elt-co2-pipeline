@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 from sqlalchemy import create_engine, text
 
-URL = "https://raw.githubusercontent.com/owid-co2-data/master/owid-co2-data.csv"
+URL = "https://catalog.ourworldindata.org/emissions/owid_co2/owid_co2.csv"
 DB = "postgresql+psycopg2://postgres:pass@localhost:5432/postgres"
 
 COLS = ["country", "year", "iso_code", "population", "gdp", "co2", "co2_per_capita"]
